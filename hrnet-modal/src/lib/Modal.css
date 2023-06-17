@@ -1,0 +1,146 @@
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    justify-content: center;
+    align-items: center;
+}
+
+.modalBody {
+    color: black;
+    font-size: 15px;
+}
+
+.modal {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 1015;
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+    display: flex;
+    align-items: center;
+    background-color: rgba(48,48,48,0.9);
+}
+
+.modalSmall {
+    max-width: 500px;
+    
+}
+
+.modalSmall, .modalBig {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+    z-index: 100;
+    position: relative;
+    margin: auto;
+    border-radius: 8px;
+    width: 80%;
+    padding: 2rem;
+    -webkit-animation: appear 0.4s forwards;
+            animation: appear 0.4s forwards;
+  }
+
+.modalBig {
+    max-width: 800px;
+}
+
+.modalContent {
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.modalCloseButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 7px;
+    cursor: pointer;
+}
+
+.modalToggleSmall,
+input[type='submit'] {
+  background-color: rgb(238, 15, 179);
+  cursor: pointer;
+  padding: 1.5rem 2rem;
+  text-transform: uppercase;
+  border: none;
+  color: white;
+}
+
+.modalToggleBig,
+input[type='submit'] {
+  background-color: rgb(15, 238, 37);
+  cursor: pointer;
+  padding: 1.5rem 2rem;
+  text-transform: uppercase;
+  border: none;
+  color: black;
+}
+
+button.modalToggle:not(:first-child) {
+  margin-left: 10px;
+}
+
+@-webkit-keyframes modal-fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+@keyframes modal-fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+@-webkit-keyframes appear {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+}
+
+@keyframes appear {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+}
+
