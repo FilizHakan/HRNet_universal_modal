@@ -46,11 +46,12 @@ h1 {
 }
 
 .modalSmall {
-    max-width: 500px;
+    max-width: 550px;
     
 }
 
-.modalSmall, .modalBig {
+.modalSmall, 
+.modalBig {
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
     background: white;
@@ -62,7 +63,7 @@ h1 {
     padding: 2rem;
     -webkit-animation: appear 0.4s forwards;
             animation: appear 0.4s forwards;
-  }
+}
 
 .modalBig {
     max-width: 800px;
