@@ -2,7 +2,7 @@ import Modal from "./lib/Modal";
 import SwitchModal from "./lib/SwitchModal";
 import "./lib/Modal.css";
 
-function App() 
+export default function App() 
 {
   const { isVisible: isSmallModalVisible, toggle: toggleSmallModal } = SwitchModal();
 
@@ -17,6 +17,15 @@ function App()
             TEST SMALL SIZE
           </button>
 
+          <Modal
+            isVisible={isSmallModalVisible}
+            hide={toggleSmallModal}
+            title="THIS IS A TEST"
+            size="small"
+          >
+            <div className="modalBody">Small modal content example</div>
+          </Modal>
+
           <button className="modalToggleBig" onClick={toggleBigModal}>
             TEST BIG SIZE
           </button>
@@ -27,15 +36,6 @@ function App()
             title="THIS IS A TEST"
             size="big"
           >
-            <div className="modalBody">Small modal content example</div>
-          </Modal>
-
-          <Modal
-            isVisible={isSmallModalVisible}
-            hide={toggleSmallModal}
-            title="THIS IS A TEST"
-            size="small"
-          >
             <div className="modalBody">Big modal content example</div>
           </Modal>
         </div>
@@ -43,4 +43,3 @@ function App()
   );
 };
 
-export default App;
