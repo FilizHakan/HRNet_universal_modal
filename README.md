@@ -13,6 +13,14 @@ Run the following commands:
 `cd hrnet-modal`
 `npm start`
 
+## Use Modal
+
+In a React app, use the Modal components in App.js:<br/>
+`import Modal from 'hrnet-modal/dist/lib/Modal.jsx`<br/>
+<br/>
+Insert:<br/>
+`<Modal />`
+
 ## Customization of the modal
 
 ### You can choose a head title for the modal
