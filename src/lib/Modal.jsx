@@ -13,7 +13,7 @@ const Modal = ({ isVisible, hide, title, size, ...props }) =>
           <div onClick={hide} className="modalOverlay">
             <div className={size === "small" ? "modalSmall" : "modalBig"}>
               <div className="modalContent">
-                <h2>{title}</h2>
+                <h4>{title}</h4>
                 <div className="modalBody">{props.children}</div>
                 <button 
                   type="button" 
