@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "author": "Filiz Hakan",
   "dependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -10,7 +11,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
+    "build": "del -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -50,6 +51,17 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/FilizHakan/HRNet_universal_modal.git"
-  }
+    "url": "git+https://github.com/FilizHakan/HRNet_universal_modal.git"
+  },
+  "description": "A simple yet universal modal, based as a React library components that was created simply by using `create-react-app`.<br/>",
+  "bugs": {
+    "url": "https://github.com/FilizHakan/HRNet_universal_modal/issues"
+  },
+  "homepage": "https://github.com/FilizHakan/HRNet_universal_modal#readme",
+  "keywords": [
+    "react",
+    "components",
+    "modal"
+  ],
+  "license": "ISC"
 }
