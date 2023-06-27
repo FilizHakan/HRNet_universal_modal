@@ -1,6 +1,6 @@
 {
   "name": "hrnet_universal_modal",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "Filiz Hakan",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -51,7 +51,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FilizHakan/hrnet_universal_modal.git"
+    "url": "git+https://github.com/FilizHakan/hrnet_universal_modnpm run publishal.git"
   },
   "keywords": [
     "react",
